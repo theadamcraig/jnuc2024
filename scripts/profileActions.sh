@@ -1,6 +1,4 @@
 #!/bin/bash
-
-
 SCRIPT_NAME=$(basename "$0")
 PROFILE_ACTION_LOG="/tmp/ProfileActions.log"
 
@@ -31,17 +29,14 @@ profileAction() {
 		#Removing previous entries of this
 		sed -i '' '/'"$SCRIPT_NAME"'/d' "$PROFILE_ACTION_LOG"
 	fi
-	
 	if [ -n "$action" ] && [ -n "$profileName" ] ; then
 		echo "ProfileAction $action: $profileName"
 		echo "$(date +'%m-%d-%Y %r')" SCRIPT: "$SCRIPT_NAME" "$action": "$profileName" >> "$PROFILE_ACTION_LOG"
 	fi
-	
 	if [ $check ] ; then
 		result="$(grep -e "$SCRIPT_NAME" ${PROFILE_ACTION_LOG} | sed 's/.*SCRIPT: //' )"
 		echo "${result}"
 	fi
-	
 	if [ $recon ] ; then
 		jamf recon >> /dev/null 2>&1
 	fi
