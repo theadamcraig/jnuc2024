@@ -5,11 +5,9 @@
 chromeInitialPreferences="/Library/Google/Google Chrome Initial Preferences"
 initialPrefPolicy="install_chrome_pref"
 chromePolicy="install_chrome"
-
 exitCode=0
 
 policyTriggerCorrectResults() { 
-
     policyTrigger="${1}"
     
     echo "Running the jamf policy ${policyTrigger}"
@@ -29,9 +27,7 @@ policyTriggerCorrectResults() {
     else
         echo "Policy either failed or was not found."
     fi
-
 }
-
 
 if [[ ! -e "${chromeInitialPreferences}" ]] ; then
     echo "Chrome initialPrefs missing"
@@ -41,5 +37,4 @@ fi
 if [[ $exitCode == 0 ]] && [[ -e "${chromeInitialPreferences}" ]] ; then
     policyTriggerCorrectResults "${chromePolicy}"
 fi
-
 exit $exitCode
