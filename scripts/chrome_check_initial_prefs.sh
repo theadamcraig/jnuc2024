@@ -9,7 +9,6 @@ exitCode=0
 
 policyTriggerCorrectResults() { 
     policyTrigger="${1}"
-    
     echo "Running the jamf policy ${policyTrigger}"
     result=$( jamf policy -event "${policyTrigger}" -forceNoRecon )
     exitCode="$?"
@@ -19,7 +18,6 @@ policyTriggerCorrectResults() {
         echo "setting exit code to 1"
         exitCode=1
     fi
-    
     echo "Script result is $result"
     
     if [[ "${exitCode}" = 0 ]] ; then
