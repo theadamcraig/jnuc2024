@@ -1,18 +1,6 @@
 # JNUC-2024
 For JNUC 2024 Tick Tock Tech Presentation
 
-General Presentation Overview
-
-Slow Deployment/PatchGroup EA
-
-add/remove from static group scripts
-
-
-
-
-
-
-
 Copy Paste from JNUC2022 readme for markup:
 
 ### Install Rosetta During Prestage Enrollment
