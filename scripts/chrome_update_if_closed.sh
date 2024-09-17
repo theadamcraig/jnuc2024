@@ -3,6 +3,8 @@
 applicationName="Google Chrome"
 updateTrigger="install_chrome"
 
+exitCode=0
+
 policyTriggerCorrectResults() { 
     policyTrigger="${1}"
     echo "Running the jamf policy ${policyTrigger}"
@@ -32,4 +34,4 @@ else
     exit 1
 fi
 
-exit 0
+exit $exitCode
