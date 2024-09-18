@@ -1,7 +1,7 @@
 # JNUC-2024
 For JNUC 2024 Tick Tock Tech Presentation:
 
-### ProfileAction
+## ProfileAction
 
 A bash function with several strategic uses to control the installation or removal of Jamf Configuration profiles with a script.
 
@@ -12,32 +12,32 @@ A bash function with several strategic uses to control the installation or remov
  - Strategically Roll Out or Verify profile changes.
 
 
-#### ProfileAction Extension Attribute
+### ProfileAction Extension Attribute
 
 Take the ProfileAction - EA.sh script and set it up in your jamf pro instance as an extension attribute
 
 ![ProfileAction ExtensionAttribute](https://github.com/theadamcraig/jnuc2024/blob/main/images/profileActions_extensionattribute.png)
 
-#### ProfileAction Smart Groups
+### ProfileAction Smart Groups
 
 You can use this extension attribute to make smart groups.
 
 One group to control the installation
-![ProfileAction ExtensionAttribute](https://github.com/theadamcraig/jnuc2024/blob/main/images/profileActions_installexample.png)
+![ProfileAction Install Example](https://github.com/theadamcraig/jnuc2024/blob/main/images/profileActions_installexample.png)
 
 I also like to include the ProfileName criteria in this group so that computers that have the profile installed remain in scope.
 Note that if you do this then renaming the profile could break the scoping and have an impact on your end users.
 
 
 One group to control the removal
-![ProfileAction ExtensionAttribute](https://github.com/theadamcraig/jnuc2024/blob/main/images/profileActions_removeexample.png)
+![ProfileAction Remove Example](https://github.com/theadamcraig/jnuc2024/blob/main/images/profileActions_removeexample.png)
 
 
-#### ProfileAction Configuration Profile scoping
+### ProfileAction Configuration Profile scoping
 
 Scope the configuration profile to the INSTALL: smart group and exclude the REMOVE: smart group.
 
-#### ProfileAction Function
+### ProfileAction Function
 
 Once this is set up you can now use the ProfileAction function in a script to install or remove the configuration profile from within a script.
 
