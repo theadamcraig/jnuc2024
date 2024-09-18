@@ -67,6 +67,11 @@ profileAction() {
 }
 
 function waitForProfileRemoval () {
+    profileName="${1}"
+    if [[ -z "$profileName" ]] ; then
+        echo "no profileName Provided"
+        exit 1
+    fi
     index=0
     while [[ "$(profiles -C -v | grep "$profileName" | awk -F": " '/attribute: name/{print $NF}')" == *"$profileName"* ]] && [ $index -le 25 ] ; do
         echo "Waiting for $profileName configuration profile to remove..."
@@ -89,7 +94,7 @@ UsernameLabel=$( defaults read /Library/Managed\ Preferences/com.jamf.connect.pl
 if [[ -z "${UsernameLabel}" ]] || [[ "${UsernameLabel}" == "UsernameLabel = Username" ]] ; then
     echo "Profile is out of date"
     profileAction --remove "$profileName"
-    waitForProfileRemoval
+    waitForProfileRemoval "$profileName"
     profileAction --empty
 fi
 exit 0
