@@ -1,5 +1,22 @@
 #!/bin/bash
 
+##########################################################################################
+
+# written by Adam Caudill
+
+# Script presented in Tick Tock Tech at JNUC 2024
+
+# https://github.com/theadamcraig/jnuc2024/
+
+##########################################################################################
+
+# This script is an example of:
+#    using the policyTriggerCorrectResults as a function
+#    conditionally running an application trigger only if the targeted application is running
+#    only running jamf recon when a change is actually applied.
+
+##########################################################################################
+
 applicationName="Google Chrome"
 updateTrigger="install_chrome"
 

@@ -1,5 +1,24 @@
 #!/bin/bash
 
+##########################################################################################
+
+# written by Adam Caudill
+
+# Script presented in Tick Tock Tech at JNUC 2024
+
+# https://github.com/theadamcraig/jnuc2024/
+
+##########################################################################################
+
+# This script is an example of:
+#    using the profileAction function
+#    using the waitForProfileRemoval function
+#    removing and reinstalling a profile if there is an outdated value 
+#        In this example replacing a Jamf Connect Profile if the username label is "Username" instead of "Email"
+
+##########################################################################################
+
+
 SCRIPT_NAME=$(basename "$0")
 PROFILE_ACTION_LOG="/tmp/ProfileActions.log"
 profileName="Jamf Connect - Full Deployment"

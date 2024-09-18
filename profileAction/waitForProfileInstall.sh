@@ -1,6 +1,14 @@
 #!/bin/bash
 
+##########################################################################################
 
+# written by Adam Williams
+
+# Script presented in Tick Tock Tech at JNUC 2024
+
+# https://github.com/theadamcraig/jnuc2024/
+
+##########################################################################################
 
 function waitForProfileInstall () {
     profileName="${1}"

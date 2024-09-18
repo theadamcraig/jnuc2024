@@ -1,14 +1,14 @@
 #!/bin/bash
 
-##########################################################################################/
+##########################################################################################
 
 # written by Adam Caudill
 
-# Script presented in Userproof Onboarding: Backup Plans for Zero Touch for IT JNUC 2022
+# Script presented in Tick Tock Tech at JNUC 2024
 
-# https://github.com/theadamcraig/jamf-scripts/tree/master/JNUC2022
+# https://github.com/theadamcraig/jnuc2024/
 
-##########################################################################################/
+##########################################################################################
 
 # This script allows the "ReRun Policy of Failure" feature to be used to maximum effect
 
@@ -16,13 +16,13 @@
 
 # This policy gets accurate results and exits accordingly, so that the rerun on failure will trigger again if the policy does fail.
 
-##########################################################################################/
+##########################################################################################
 
 # Variables in this script
 
 # $4 is the trigger that installs the application listed in $4
 
-##########################################################################################/
+##########################################################################################
 
 
 ## the policy to install the above application

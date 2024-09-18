@@ -1,5 +1,22 @@
 #!/bin/bash
 
+##########################################################################################
+
+# written by Adam Caudill
+
+# Script presented in Tick Tock Tech at JNUC 2024
+
+# https://github.com/theadamcraig/jnuc2024/
+
+##########################################################################################
+
+# This script is an example of:
+#    using the policyTriggerCorrectResults as a function
+#    conditionally running an application trigger based on if a file is present. 
+
+##########################################################################################
+
+
 # more info on Chrome Initial Preferences here
 # https://support.google.com/chrome/a/answer/187948?sjid=7463765023064133746-NC
 chromeInitialPreferences="/Library/Google/Google Chrome Initial Preferences"
@@ -35,4 +52,4 @@ fi
 if [[ $exitCode == 0 ]] && [[ -e "${chromeInitialPreferences}" ]] ; then
     policyTriggerCorrectResults "${chromePolicy}"
 fi
-exit $exitCode
+exit "${exitCode}"

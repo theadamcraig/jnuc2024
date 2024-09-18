@@ -1,4 +1,26 @@
 #!/bin/bash
+
+##########################################################################################
+
+# written by Adam Caudill
+
+# Script presented in Tick Tock Tech at JNUC 2024
+
+# https://github.com/theadamcraig/jnuc2024/
+
+##########################################################################################
+
+# This function can be used with the ProfileAction extension attribute and configured smart groups to install or remove profiles on demand.
+
+# –install : writes an INSTALL command
+# –remove : writes a REMOVE command
+# –empty : removes previous commands from this script
+# –check : echo out the current commands from this script
+# –forceNoRecon : disables inventory update
+
+##########################################################################################
+
+
 SCRIPT_NAME=$(basename "$0")
 PROFILE_ACTION_LOG="/tmp/ProfileActions.log"
 
