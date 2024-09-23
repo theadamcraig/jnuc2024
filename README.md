@@ -32,8 +32,7 @@ You can also exclude various patch groups for a similar effect or scope addition
 
 ### Add/Remove From Static Group Scripts
 
-[Add to Static Group Script](https://github.com/theadamcraig/jnuc2024/blob/main/scripts/add_to_static_group.sh)
-[Remove from Static Group Script](https://github.com/theadamcraig/jnuc2024/blob/main/scripts/remove_from_static_group.sh)
+[Add to Static Group Script](https://github.com/theadamcraig/jnuc2024/blob/main/scripts/add_to_static_group.sh) • [Remove from Static Group Script](https://github.com/theadamcraig/jnuc2024/blob/main/scripts/remove_from_static_group.sh)
 
 The provided scripts will allow you to use the Jamf Pro API to add or remove a Mac to a static group. Examples of how to use these scripts:
 
