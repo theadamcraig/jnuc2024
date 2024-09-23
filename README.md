@@ -23,12 +23,19 @@ We will provide specific examples and scripts that attendees can take home and i
 [Script](https://github.com/theadamcraig/jnuc2024/blob/main/scripts/patch_group%20-%20EA.sh)
 
 We created randomized deployment groups designed for slower controlled deployments.
-There is a Patch Group extension attribute that outputs a random number between 1-8, The number changes during an inventory update once a day.
-You then create smart groups to match the Patch Group extension attribute for each number.
-This will result in each patch group having a random selection of computers that is constantly changing.
+In the patch group extension attribute, it outputs a random number between 1-8 that is randomized during an inventory update and only updates once per day. You then create smart groups to match the Patch Group extension attribute for each number.
+This will result in each patch group having a random selection of computers that is constantly changing so you can slowly deploy policies.
 You can scope a policy to a patch group and it will go out to about 1/8th of your computers now, and will overtime be scoped to and run on the rest of your computers.
-You can also exclude various patch groups for a similar effect.
+You can also exclude various patch groups for a similar effect or scope additional patch groups to speed up the deployment.
 
 ---
 
 ### Add/Remove From Static Group Scripts
+
+[Add to Static Group Script](https://github.com/theadamcraig/jnuc2024/blob/main/scripts/add_to_static_group.sh)
+[Remove from Static Group Script](https://github.com/theadamcraig/jnuc2024/blob/main/scripts/remove_from_static_group.sh)
+
+The provided scripts will allow you to use the Jamf Pro API to add or remove a Mac to a static group. Examples of how to use these scripts:
+
+    • Remove a Mac from a static group after executing a policy
+    • Add a Mac to a static group if there was a failure in a policy
