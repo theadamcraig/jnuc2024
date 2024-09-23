@@ -46,8 +46,8 @@ The provided scripts will allow you to use the Jamf Pro API to add or remove a M
 
 A bash function with several strategic uses to control the installation or removal of Jamf Configuration profiles with a script.
 
-“Custom Triggers” for profiles.
-Automate individual installs/removals of profiles.
-Check conditions before installing a profile.
-Have a pre/post-install script for a profile.
-Strategically Roll Out or Verify profile changes.
+    • “Custom Triggers” for profiles.
+    • Automate individual installs/removals of profiles.
+    • Check conditions before installing a profile.
+    • Have a pre/post-install script for a profile.
+    • Strategically Roll Out or Verify profile changes.
