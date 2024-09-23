@@ -20,7 +20,7 @@ We will provide specific examples and scripts that attendees can take home and i
 
 ### Slow Deployment Group Extension Attribute
 
-[Script](https://github.com/theadamcraig/jnuc2024/blob/main/scripts/patch_group%20-%20EA.sh)
+[Slow Deployment Extension Attribute](https://github.com/theadamcraig/jnuc2024/blob/main/scripts/patch_group%20-%20EA.sh)
 
 We created randomized deployment groups designed for slower controlled deployments.
 In the patch group extension attribute, it outputs a random number between 1-8 that is randomized during an inventory update and only updates once per day. You then create smart groups to match the Patch Group extension attribute for each number.
