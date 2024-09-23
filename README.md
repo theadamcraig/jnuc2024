@@ -39,3 +39,15 @@ The provided scripts will allow you to use the Jamf Pro API to add or remove a M
 
     • Remove a Mac from a static group after executing a policy
     • Add a Mac to a static group if there was a failure in a policy
+
+### ProfileAction
+
+[GitHub Folder](https://github.com/theadamcraig/jnuc2024/tree/main/profileAction)
+
+A bash function with several strategic uses to control the installation or removal of Jamf Configuration profiles with a script.
+
+“Custom Triggers” for profiles.
+Automate individual installs/removals of profiles.
+Check conditions before installing a profile.
+Have a pre/post-install script for a profile.
+Strategically Roll Out or Verify profile changes.
