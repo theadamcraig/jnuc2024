@@ -24,7 +24,11 @@ PROFILE_ACTION_LOG="/tmp/ProfileActions.log"
 profileName="Jamf Connect - Full Deployment"
 
 profileAction() {
+    local check
+    local empty
     local recon=true
+    local action
+    local profileName
     while test $# -gt 0 ; do
         case "$1" in 
             -c|--check) check=true
