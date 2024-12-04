@@ -2,6 +2,8 @@
 
 **Presenters:** [Adam Caudill](https://github.com/theadamcraig) • [Adam Williams](https://github.com/Adam24Williams)
 
+[Watch the presentation](https://www.youtube.com/watch?v=pHxUe2ATaGU&list=PLlxHm_Px-Ie1NYs8E3zHEL0ktmM-Mrgzn&index=35)
+
 ---
 
 [Download the presentation](https://github.com/theadamcraig/jnuc2024/raw/main/JNUC%202024%20-%20Tick%20Tock%20Tech.key)
