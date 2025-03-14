@@ -27,7 +27,7 @@ PROFILE_ACTION_LOG="/tmp/ProfileActions.log"
 profileAction() {
     local check
     local empty
-    local recon=true
+    local noRecon
     local action
     local profileName
     while test $# -gt 0 ; do
@@ -36,7 +36,7 @@ profileAction() {
             ;;
             -e|--empty) empty=true
             ;;
-            -f|--forceNoRecon) recon=false
+            -f|--forceNoRecon) noRecon=true
             ;;
             -i|--install) local action="INSTALL"
                 shift
@@ -66,7 +66,10 @@ profileAction() {
         echo "${result}"
     fi
     
-    if [ $recon ] ; then
+    if [ $noRecon ] ; then
+        echo "--forceNoRecon enabled"
+    else
+        echo "jamf recon"
         jamf recon >> /dev/null 2>&1
     fi
 }
